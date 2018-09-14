@@ -1,0 +1,11 @@
+.info {
+  text-align: center;
+}
+.air-button {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+.am-button {
+  border-radius: 0px;
+}
