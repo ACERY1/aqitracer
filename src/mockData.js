@@ -21,7 +21,7 @@ const data = Mock.mock({
     {
       "citynow": {
         "city": city,
-        "AQI": Random.integer(60,100),
+        "AQI": Random.integer(0,100),
         "quality": ['优', '良', '中', '差'][Random.integer(0,3)],
         "date": Random.date('yyyy-MM-dd hh:mm')
       },
@@ -30,7 +30,314 @@ const data = Mock.mock({
   ]
 })
 
-export default data;
+const data2 = {
+	"resultcode": "200",
+	"reason": "SUCCESSED!",
+	"error_code": 0,
+	"result": [{
+		"citynow": {
+			"city": "杭州",
+			"AQI": "38",
+			"quality": "优",
+			"date": "2018-09-15 23:00"
+		},
+		"lastTwoWeeks": {
+			"1": {
+				"city": "杭州",
+				"AQI": "22",
+				"quality": "优",
+				"date": "2018-08-19"
+			},
+			"2": {
+				"city": "杭州",
+				"AQI": "47",
+				"quality": "优",
+				"date": "2018-08-20"
+			},
+			"3": {
+				"city": "杭州",
+				"AQI": "60",
+				"quality": "良",
+				"date": "2018-08-21"
+			},
+			"4": {
+				"city": "杭州",
+				"AQI": "38",
+				"quality": "优",
+				"date": "2018-08-22"
+			},
+			"5": {
+				"city": "杭州",
+				"AQI": "50",
+				"quality": "优",
+				"date": "2018-08-23"
+			},
+			"6": {
+				"city": "杭州",
+				"AQI": "79",
+				"quality": "良",
+				"date": "2018-08-24"
+			},
+			"7": {
+				"city": "杭州",
+				"AQI": "46",
+				"quality": "优",
+				"date": "2018-08-25"
+			},
+			"8": {
+				"city": "杭州",
+				"AQI": "43",
+				"quality": "优",
+				"date": "2018-08-26"
+			},
+			"9": {
+				"city": "杭州",
+				"AQI": "26",
+				"quality": "优",
+				"date": "2018-08-27"
+			},
+			"10": {
+				"city": "杭州",
+				"AQI": "28",
+				"quality": "优",
+				"date": "2018-08-28"
+			},
+			"11": {
+				"city": "杭州",
+				"AQI": "29",
+				"quality": "优",
+				"date": "2018-08-29"
+			},
+			"12": {
+				"city": "杭州",
+				"AQI": "39",
+				"quality": "优",
+				"date": "2018-08-30"
+			},
+			"13": {
+				"city": "杭州",
+				"AQI": "38",
+				"quality": "优",
+				"date": "2018-08-31"
+			},
+			"14": {
+				"city": "杭州",
+				"AQI": "42",
+				"quality": "优",
+				"date": "2018-09-01"
+			},
+			"15": {
+				"city": "杭州",
+				"AQI": "49",
+				"quality": "优",
+				"date": "2018-09-02"
+			},
+			"16": {
+				"city": "杭州",
+				"AQI": "36",
+				"quality": "优",
+				"date": "2018-09-03"
+			},
+			"17": {
+				"city": "杭州",
+				"AQI": "60",
+				"quality": "良",
+				"date": "2018-09-04"
+			},
+			"18": {
+				"city": "杭州",
+				"AQI": "70",
+				"quality": "良",
+				"date": "2018-09-05"
+			},
+			"19": {
+				"city": "杭州",
+				"AQI": "105",
+				"quality": "轻度污染",
+				"date": "2018-09-06"
+			},
+			"20": {
+				"city": "杭州",
+				"AQI": "49",
+				"quality": "优",
+				"date": "2018-09-07"
+			},
+			"21": {
+				"city": "杭州",
+				"AQI": "41",
+				"quality": "优",
+				"date": "2018-09-08"
+			},
+			"22": {
+				"city": "杭州",
+				"AQI": "42",
+				"quality": "优",
+				"date": "2018-09-09"
+			},
+			"23": {
+				"city": "杭州",
+				"AQI": "52",
+				"quality": "良",
+				"date": "2018-09-10"
+			},
+			"24": {
+				"city": "杭州",
+				"AQI": "41",
+				"quality": "优",
+				"date": "2018-09-11"
+			},
+			"25": {
+				"city": "杭州",
+				"AQI": "46",
+				"quality": "优",
+				"date": "2018-09-12"
+			},
+			"26": {
+				"city": "杭州",
+				"AQI": "59",
+				"quality": "良",
+				"date": "2018-09-13"
+			},
+			"27": {
+				"city": "杭州",
+				"AQI": "58",
+				"quality": "良",
+				"date": "2018-09-14"
+			},
+			"28": {
+				"city": "杭州",
+				"AQI": "38",
+				"quality": "优",
+				"date": "2018-09-15"
+			}
+		},
+		"lastMoniData": {
+			"1": {
+				"city": "滨江",
+				"AQI": "42",
+				"America_AQI": "72",
+				"quality": "优",
+				"PM2.5Hour": "26",
+				"PM2.5Day": "26",
+				"PM10Hour": "42",
+				"lat": "30.21",
+				"lon": "120.210833"
+			},
+			"2": {
+				"city": "西溪",
+				"AQI": "41",
+				"America_AQI": "74",
+				"quality": "优",
+				"PM2.5Hour": "27",
+				"PM2.5Day": "27",
+				"PM10Hour": "41",
+				"lat": "30.27472222",
+				"lon": "120.0633333"
+			},
+			"3": {
+				"city": "千岛湖",
+				"AQI": "78",
+				"America_AQI": "125",
+				"quality": "良",
+				"PM2.5Hour": "—",
+				"PM2.5Day": "—",
+				"PM10Hour": "—",
+				"lat": "29.640581",
+				"lon": "119.025965"
+			},
+			"4": {
+				"city": "下沙",
+				"AQI": "26",
+				"America_AQI": "56",
+				"quality": "优",
+				"PM2.5Hour": "18",
+				"PM2.5Day": "18",
+				"PM10Hour": "24",
+				"lat": "30.30583333",
+				"lon": "120.3480556"
+			},
+			"5": {
+				"city": "卧龙桥",
+				"AQI": "37",
+				"America_AQI": "70",
+				"quality": "优",
+				"PM2.5Hour": "25",
+				"PM2.5Day": "25",
+				"PM10Hour": "37",
+				"lat": "30.246",
+				"lon": "120.128"
+			},
+			"6": {
+				"city": "浙江农大",
+				"AQI": "41",
+				"America_AQI": "68",
+				"quality": "优",
+				"PM2.5Hour": "24",
+				"PM2.5Day": "24",
+				"PM10Hour": "41",
+				"lat": "30.268",
+				"lon": "120.193"
+			},
+			"7": {
+				"city": "朝晖五区",
+				"AQI": "42",
+				"America_AQI": "68",
+				"quality": "优",
+				"PM2.5Hour": "24",
+				"PM2.5Day": "24",
+				"PM10Hour": "42",
+				"lat": "30.288",
+				"lon": "120.171"
+			},
+			"8": {
+				"city": "和睦小学",
+				"AQI": "36",
+				"America_AQI": "70",
+				"quality": "优",
+				"PM2.5Hour": "25",
+				"PM2.5Day": "25",
+				"PM10Hour": "36",
+				"lat": "30.31194444",
+				"lon": "120.1197222"
+			},
+			"9": {
+				"city": "临平镇",
+				"AQI": "36",
+				"America_AQI": "52",
+				"quality": "优",
+				"PM2.5Hour": "16",
+				"PM2.5Day": "16",
+				"PM10Hour": "36",
+				"lat": "30.418333",
+				"lon": "120.300556"
+			},
+			"10": {
+				"city": "城厢镇",
+				"AQI": "38",
+				"America_AQI": "72",
+				"quality": "优",
+				"PM2.5Hour": "26",
+				"PM2.5Day": "26",
+				"PM10Hour": "38",
+				"lat": "30.18194444",
+				"lon": "120.2697222"
+			},
+			"11": {
+				"city": "云栖",
+				"AQI": "37",
+				"America_AQI": "62",
+				"quality": "优",
+				"PM2.5Hour": "21",
+				"PM2.5Day": "21",
+				"PM10Hour": "37",
+				"lat": "30.18083333",
+				"lon": "120.0883333"
+			}
+		}
+	}]
+}
+
+export default data2;
 
 // export default {
 //   "resultcode":"200",
