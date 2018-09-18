@@ -9,7 +9,7 @@ import myKey from './appKey'
 import axios from 'axios'
 
 
-const ngServer = 'http://localhost:3001'
+const ngServer = ''
 const dataURLPath = '/api/data'
 
 const g2Config = {
